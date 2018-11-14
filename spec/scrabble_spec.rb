@@ -15,7 +15,8 @@ describe('#scrabble') do
 
   it("finds total point value of word") do
     word1 = Word.new("dog")
-    expect(scrabble("dog")).to(eq(5))
+    word1.scrabble()
+    expect(word1.total).to(eq(5))
   end
 
 end
